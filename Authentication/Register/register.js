@@ -1,9 +1,16 @@
-// Helper function to retrieve users from local storage
+// authentication/register/register.js
+
+// Check if the user is already logged in
+if (localStorage.getItem('isLoggedIn') === 'true') {
+    window.location.href = '../../modules/dashboard/index.html'; // Redirect to dashboard if logged in
+}
+
+// Retrieve users from local storage
 function getStoredUsers() {
     return JSON.parse(localStorage.getItem('users')) || [];
 }
 
-// Helper function to store users in local storage
+// Store users in local storage
 function setStoredUsers(users) {
     localStorage.setItem('users', JSON.stringify(users));
 }
@@ -43,9 +50,10 @@ document.getElementById('login-btn').onclick = () => {
     const user = users.find(user => user.username === username && user.password === password);
     if (user) {
         alert('Login successful!');
-        localStorage.setItem('isLoggedIn', 'true'); // Set flag in localStorage
-        window.location.href = '../dashboard/index.html'; // Redirect to dashboard
+        localStorage.setItem('isLoggedIn', 'true'); 
+        window.location.href = '../../modules/dashboard/index.html'; // Corrected path
     } else {
         alert('Invalid username or password.');
     }
 };
+

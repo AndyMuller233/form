@@ -1,17 +1,4 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    height: 100vh;
-    background-color: #f4f4f4;
-}
-
-#dashboard {
-    display: flex;
-    width: 100%;
-}
-
+/* components/style.css */
 .sidebar {
     width: 250px;
     background-color: #343a40;
@@ -31,13 +18,4 @@ body {
 
 .sidebar a:hover {
     background-color: #495057;
-}
-
-.main-content {
-    margin-left: 250px;
-    padding: 20px;
-}
-
-.hidden {
-    display: none;
 }
