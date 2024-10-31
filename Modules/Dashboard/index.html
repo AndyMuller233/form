@@ -1,3 +1,4 @@
+<!-- modules/dashboard/index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,16 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../components/style.css">
 </head>
 <body>
-
     <div id="dashboard">
+        <!-- Sidebar -->
         <div class="sidebar">
+            <!-- Include Sidebar HTML -->
             <a href="#" id="home">Home</a>
             <a href="#">User</a>
             <a href="#" id="logout">Logout</a>
         </div>
 
+        <!-- Main Content -->
         <div class="main-content">
             <div class="home-content hidden" id="home-content">
                 <h3>Welcome to the Home Section</h3>
@@ -23,7 +27,6 @@
             </div>
         </div>
     </div>
-
     <script src="dashboard.js"></script>
 </body>
 </html>
