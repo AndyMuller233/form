@@ -56,4 +56,3 @@ document.getElementById('login-btn').onclick = () => {
         alert('Invalid username or password.');
     }
 };
-

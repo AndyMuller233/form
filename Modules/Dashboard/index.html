@@ -1,4 +1,5 @@
 <!-- modules/dashboard/index.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,16 +15,54 @@
         <div class="sidebar">
             <!-- Include Sidebar HTML -->
             <a href="#" id="home">Home</a>
-            <a href="#">User</a>
+            <a href="#" id="user">User</a>
             <a href="#" id="logout">Logout</a>
         </div>
 
         <!-- Main Content -->
         <div class="main-content">
-            <div class="home-content hidden" id="home-content">
+            <!-- Home Content (Default) -->
+            <div class="home-content" id="home-content">
                 <h3>Welcome to the Home Section</h3>
                 <p>This is your dashboard's home.</p>
                 <p>Feel free to explore the options available in the sidebar.</p>
+            </div>
+
+            <!-- User Content (Hidden by default) -->
+            <div class="user-content hidden" id="user-content">
+                <h3>User Management</h3>
+
+                <!-- Add User Form -->
+                <form id="user-form">
+                    <input type="text" id="user-name" placeholder="Name" required>
+                    <input type="email" id="user-email" placeholder="Email" required>
+                    <button type="submit" id="add-btn">Add User</button>
+                </form>
+
+                <!-- Edit User Form (Hidden by default) -->
+                <div id="edit-user-form" class="hidden">
+                    <h3>Edit User</h3>
+                    <form id="edit-form">
+                        <input type="text" id="edit-name" placeholder="Name" required>
+                        <input type="email" id="edit-email" placeholder="Email" required>
+                        <button type="submit" id="save-btn">Save Changes</button>
+                        <button type="button" id="cancel-btn">Cancel</button>
+                    </form>
+                </div>
+
+                <!-- Users Table -->
+                <table id="user-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Users will be rendered here -->
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
