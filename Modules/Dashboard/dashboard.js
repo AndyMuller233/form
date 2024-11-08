@@ -133,5 +133,7 @@ document.getElementById('home').onclick = () => {
     document.getElementById('home-content').classList.remove('hidden');
 };
 
+
 // Render users when the page loads
 renderUsers();
+
