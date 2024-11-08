@@ -22,3 +22,5 @@ document.getElementById('logout').onclick = () => {
 document.getElementById('home').onclick = () => {
     document.getElementById('home-content').classList.remove('hidden');
 };
+
+
