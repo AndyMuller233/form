@@ -1,4 +1,5 @@
 /* modules/dashboard/style.css */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -22,4 +23,35 @@ body {
     display: none;
 }
 
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+form {
+    margin-bottom: 20px;
+}
 
